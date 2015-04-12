@@ -14,92 +14,14 @@ head
     script(src="bower/modernizr/modernizr.js")
 body
     header.header
-        div.header-wrapper
-            img(src="img/logo.png", alt="Loft Blog").header-logo
-            ul.header-social-block
-                li
-                    a(href="#")
-                        span.social-sprite.sprite-icon-git
-                        span.social-text Git
-                li
-                    a(href="#")
-                        span.social-sprite.sprite-icon-fb
-                        span.social-text Facebook
-                li
-                    a(href="#")
-                        span.social-sprite.sprite-icon-twitter
-                        span.social-text Twitter
-                li
-                    a(href="#")
-                        span.social-sprite.sprite-icon-vk
-                        span.social-text Vk
+        include partials/_header.jade
     div.container
+        //- Navigation aside
         aside.nav
-            ul.nav-block-main-nav
-                li.active
-                    a(href="#") Обо мне
-                li
-                    a(href="#") Мои работы
-                li
-                    a(href="#") Связаться со мной
-            ul.nav-block-contact-nav
-                li.contact-title Контакты
-                li.contact-email
-                    a(href="mailto:majesko@gmail.com") majesko@gmail.com
-                li.contact-phone
-                    a(href="tel:+7xxx1234567") +7xxx1234567
-                li.contact-skype
-                    a(href="skype:majesko1?chat") majesko1
+            include partials/_nav.jade
+        //- End of navigation navigation aside
         section.main
-            article.person
-                div.person-title Основная информация
-                div.person-content
-                    img.person-avatar(src="img/person.jpg", alt="Me")
-                    div.person-description
-                        ul
-                            li
-                                span.text-strong Меня зовут:
-                                | Борискин Василий
-                            li
-                                span.text-strong Мой возраст:
-                                | 29 лет
-                            li
-                                span.text-strong Мой город:
-                                | Санкт-Петербург, Россия
-                            li
-                                span.text-strong Моя специализация:
-                                | Frontend developer
-                            li
-                                span.text-strong Ключевые навыки:
-                                ul.person-description-tags
-                                    li html
-                                    li css
-                                    li javascript
-                                    li gulp
-                                    li git
-
-
-            article.job
-                div.job-title Опыт работы
-                div.job-description
-                    ul.job-description-list
-                        li
-                            div.job-description-subtitle "ГК ГЦЭ" - Системный администратор
-                            div.job-description-text Июль 2007 - Ноябрь 2008
-                        li
-                            div.job-description-subtitle "ООО ИТ Марин Сервис" - Системный администратор
-                            div.job-description-text  Ноябрь 2008 - по настоящее время
-
-            article.education
-                div.education-title Образование
-                div.education-description
-                    ul.education-description-list
-                        li
-                            div.education-description-subtitle Незаконченное высшее. СПбПУ
-                            div.education-description-text 2007 - 2010
-                        li
-                            div.education-description-subtitle Курсы LoftSchool.ru
-                            div.education-description-text Март 2015 - по настоящее время
+            include partials/_main.jade
     footer.page-footer
         div.copy © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его
 
