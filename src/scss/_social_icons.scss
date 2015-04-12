@@ -1,0 +1,53 @@
+.social-sprite {
+  background-image: url(../img/social-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-icon-vk {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -119px;
+}
+
+.sprite-icon-vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -119px;
+}
+
+.sprite-icon-twitter {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -5px;
+}
+
+.sprite-icon-twitter:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -62px;
+}
+
+.sprite-icon-fb {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-fb:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -5px;
+}
+
+.sprite-icon-git {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.sprite-icon-git:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -62px;
+}

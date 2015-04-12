@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Document
+    link(rel="stylesheet", href="bower/normalize.css/normalize.css")
+    link(rel="stylesheet", href="css/app.css")
+body
+    header.header
+        div.header-wrapper
+            img(src="img/logo.png", alt="Loft Blog").header-logo
+            ul.header-social-block
+                li
+                    i.social-sprite.sprite-icon-git
+                li
+                    i.social-sprite.sprite-icon-fb
+                li
+                    i.social-sprite.sprite-icon-twitter
+                li
+                    i.social-sprite.sprite-icon-vk
+    div.container
+        aside.nav
+            ul.nav-block-main-nav
+                li.active Обо мне
+                li Мои работы
+                li Связаться со мной
+            ul.nav-block-contact-nav
+                li Контакты
+                li.contact-email(style="background: black")
+                        span.contact-sprite.sprite-mail
+                        | majesko@gmail.com
+                li.contact-phone +7xxx1234567
+                li.contact-skype majesko1
+        div.wrap
+            section
+            section
+    footer
+    script(src="js/app.js")
