@@ -4,39 +4,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Document</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="bower/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/app.css">
+  <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header-wrapper"><img src="img/logo.png" alt="Loft Blog" class="header-logo">
       <ul class="header-social-block">
-        <li><i class="social-sprite sprite-icon-git"></i></li>
-        <li><i class="social-sprite sprite-icon-fb"></i></li>
-        <li><i class="social-sprite sprite-icon-twitter"></i></li>
-        <li><i class="social-sprite sprite-icon-vk"></i></li>
+        <li><a href="#"><span class="social-sprite sprite-icon-git"></span><span class="social-text">Git</span></a></li>
+        <li><a href="#"><span class="social-sprite sprite-icon-fb"></span><span class="social-text">Facebook</span></a></li>
+        <li><a href="#"><span class="social-sprite sprite-icon-twitter"></span><span class="social-text">Twitter</span></a></li>
+        <li><a href="#"><span class="social-sprite sprite-icon-vk"></span><span class="social-text">Vk</span></a></li>
       </ul>
     </div>
   </header>
   <div class="container">
     <aside class="nav">
       <ul class="nav-block-main-nav">
-        <li class="active">Обо мне</li>
-        <li>Мои работы</li>
-        <li>Связаться со мной</li>
+        <li class="active"><a href="#">Обо мне</a></li>
+        <li><a href="#">Мои работы</a></li>
+        <li><a href="#">Связаться со мной</a></li>
       </ul>
       <ul class="nav-block-contact-nav">
-        <li>Контакты</li>
-        <li style="background: black" class="contact-email"><span class="contact-sprite sprite-mail"></span>majesko@gmail.com</li>
-        <li class="contact-phone">+7xxx1234567</li>
-        <li class="contact-skype">majesko1</li>
+        <li class="contact-title">Контакты</li>
+        <li class="contact-email"><a href="mailto:majesko@gmail.com">majesko@gmail.com</a></li>
+        <li class="contact-phone"><a href="tel:+7xxx1234567">+7xxx1234567</a></li>
+        <li class="contact-skype"><a href="skype:majesko1?chat">majesko1</a></li>
       </ul>
     </aside>
-    <div class="wrap">
-      <section></section>
-      <section></section>
-    </div>
+    <section class="main">
+      <article class="person">
+        <div class="person-title">Основная информация</div>
+        <div class="person-content"><img src="img/person.jpg" alt="Me" class="person-avatar">
+          <div class="person-description">
+            <ul>
+              <li><span class="text-strong">Меня зовут:</span>Борискин Василий</li>
+              <li><span class="text-strong">Мой возраст:</span>29 лет</li>
+              <li><span class="text-strong">Мой город:</span>Санкт-Петербург, Россия</li>
+              <li><span class="text-strong">Моя специализация:</span>Frontend developer</li>
+              <li><span class="text-strong">Ключевые навыки:</span>
+                <ul class="person-description-tags">
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                  <li>gulp</li>
+                  <li>git</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="job">
+        <div class="job-title">Опыт работы</div>
+        <div class="job-description">
+          <ul class="job-description-list">
+            <li>
+              <div class="job-description-subtitle">"ГК ГЦЭ" - Системный администратор</div>
+              <div class="job-description-text">Июль 2007 - Ноябрь 2008</div>
+            </li>
+            <li>
+              <div class="job-description-subtitle">"ООО ИТ Марин Сервис" - Системный администратор</div>
+              <div class="job-description-text"> Ноябрь 2008 - по настоящее время</div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="education">
+        <div class="education-title">Образование</div>
+        <div class="education-description">
+          <ul class="education-description-list">
+            <li>
+              <div class="education-description-subtitle">Незаконченное высшее. СПбПУ</div>
+              <div class="education-description-text">2007 - 2010</div>
+            </li>
+            <li>
+              <div class="education-description-subtitle">Курсы LoftSchool.ru</div>
+              <div class="education-description-text">Март 2015 - по настоящее время</div>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
   </div>
-  <footer></footer>
+  <footer class="page-footer">
+    <div class="copy">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
   <script src="js/app.js"></script>
 </body>
